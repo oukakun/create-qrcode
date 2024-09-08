@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    #qrcode {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    #title, #domain {
+      text-align: center;
+      margin: 5px 0;
+    }
+    #download {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="qrcode"></div>
+  <h3 id="title"></h3>
+  <p id="domain"></p>
+  <button id="download">Download QR code</button>
+  
+  <script src="../../lib/qrcode.min.js"></script>
+  <script src="qr.js"></script>
+</body>
+</html>
